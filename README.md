@@ -1,8 +1,31 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Scrimba React Project
 
-Currently, two official plugins are available:
+This project is a minimal React app bootstrapped with Vite. It demonstrates a simple setup with custom styling and a basic React component.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Structure
+
+- **index.html**: Loads Bootstrap from CDN, links the custom CSS, sets up a root div, and loads the React entry point (`index.jsx`).
+- **index.css**: Applies a dark background, white text, Arial font, and centers content.
+- **index.jsx**: Renders a React section containing an image (`react-logo.png`) and a heading: "This is another element".
+
+## How to Run
+
+1. Install dependencies:
+	```bash
+	npm install
+	```
+2. Start the development server:
+	```bash
+	npm run dev
+	```
+
+## Features
+
+- Uses [React](https://react.dev/) and [Vite](https://vitejs.dev/)
+- Custom CSS for styling
+- Bootstrap included via CDN
+
+## Example Output
+
+The app displays a centered section with a React logo and a heading.
