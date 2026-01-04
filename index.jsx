@@ -2,29 +2,26 @@ import { createRoot } from "react-dom/client"
 
 const root = createRoot(document.getElementById("root"))
 
-/** Mini Challenge:
+/**
+ * Challenge:
  * 
- * Move the `header` element from the Page component into 
- * its own component called "Header"
- * 
- * Then render an instance of the Header component inside
- * the Page component where the `header` used to be.
+ * - Add a `nav` > `ul` > `li` (x3). The 3 items should say:
+ *   "Pricing", "About", and "Contact"
  */
-
-/** Challenge: 
- * Move the `main` element into its own component called "MainContent" 
- * and render that component inside the Page component.
- * 
- * Do the same with the `footer` element, moving it into a new
- * component called "Footer"
-*/
 
 
 function Header() {
     return(
         <>
-            <header>
-                <img src="react-logo.png" width="40px" alt="React logo"/>
+            <header className="header">
+                <img className="nav-logo" src="react-logo.png" alt="React logo"/>
+                <nav>
+                    <ul className="nav-list">
+                        <li className="nav-list-item">Pricing</li>
+                        <li className="nav-list-item">About</li>
+                        <li className="nav-list-item">Contact</li>
+                    </ul>
+                </nav>
             </header>
         </>
     )
