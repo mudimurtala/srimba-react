@@ -1,4 +1,7 @@
 import { createRoot } from "react-dom/client"
+import Header from "./Header"
+import MainContent from "./MainContent"
+import Footer from "./Footer"
 
 const root = createRoot(document.getElementById("root"))
 
@@ -8,44 +11,6 @@ const root = createRoot(document.getElementById("root"))
  * - Add a `nav` > `ul` > `li` (x3). The 3 items should say:
  *   "Pricing", "About", and "Contact"
  */
-
-
-function Header() {
-    return(
-        <>
-            <header className="header">
-                <img className="nav-logo" src="react-logo.png" alt="React logo"/>
-                <nav>
-                    <ul className="nav-list">
-                        <li className="nav-list-item">Pricing</li>
-                        <li className="nav-list-item">About</li>
-                        <li className="nav-list-item">Contact</li>
-                    </ul>
-                </nav>
-            </header>
-        </>
-    )
-}
-
-function MainContent() {
-    return(
-        <main>
-                <h1>Reasons I'm excited to learn React</h1>
-                <ol>
-                    <li>React is a popular library, so I will be able to fit in with all the coolest devs out there! 😎</li>
-                    <li>I am more likely to get a job as a front end developer if I know React</li>
-                </ol>
-            </main>
-    )
-}
-
-function Footer() {
-    return(
-        <footer>
-                <small>© 2026 mudi development. All rights reserved.</small>
-            </footer>
-    )
-}
 
 function Page() {
     return(
